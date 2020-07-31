@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calendar_bg">#553c8b</color>
+    <color name="calendar_bg_complimentary">#5100FF</color>
+    <color name="calendar_cell_bg">#fff7f7</color>
+    <color name="calendar_cell_text">#D5B5D3</color>
+    <color name="calendar_cell_text_unhighlight">#BB9DB9</color>
+</resources>

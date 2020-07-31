@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    
+    <color name="darkCyan">#61f2f5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="calendar_bg">#553c8b</color>
+    <color name="calendar_cell_bg">#fff7f7</color>
+    <color name="calendar_cell_text">#ffeafe</color>
+</resources>

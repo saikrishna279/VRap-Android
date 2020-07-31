@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OutlineTextView" >
+        <attr name="outlineColor" format="color" />
+        <attr name="outlineWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="BndrsntchTimer">
+        <attr name="progress_color" format="color"/>
+    </declare-styleable>
+</resources>

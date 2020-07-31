@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:exp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calendar_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.thanoscorp.athene.calendar.models.YearView
+            android:id="@+id/yearView"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="65dp"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:layout_height="65dp"
+            android:id="@+id/monthViewPager"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mikesu.horizontalexpcalendar.HorizontalExpCalendar
+                android:id="@+id/calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="0dp"
+                exp:bottom_container_height="40dp"
+                exp:center_container_expanded_height="250dp"
+                exp:top_container_height="50dp" />
+
+            <com.thanoscorp.athene.models.CCardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                exp:cardBackgroundColor="@color/calendar_cell_bg"
+                exp:cardCornerRadius="30dp"
+                exp:contentPaddingTop="50dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

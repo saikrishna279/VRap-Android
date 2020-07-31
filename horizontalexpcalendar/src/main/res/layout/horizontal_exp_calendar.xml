@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/center_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/calendar_bg"
+        android:background="#FFFFFF"
+        tools:layout_height="200dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/month_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/week_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/animate_container"
+            layout="@layout/animate_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_height="50dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/calendar_bg"
+            android:backgroundTint="@color/calendar_bg"
+            android:layout_gravity="center"
+            android:columnCount="7"
+            android:orientation="horizontal"
+            android:rowCount="1"
+            android:id="@+id/labelGrid"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

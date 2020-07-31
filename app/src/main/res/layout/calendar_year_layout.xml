@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.thanoscorp.athene.calendar.models.YearView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:rowCount="1"
+    android:columnCount="4"
+    android:layout_height="match_parent">
+
+    <com.thanoscorp.athene.models.StrokedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/calendar_bg"
+        android:layout_columnWeight="1"
+        android:text="2"
+        android:textSize="40sp"
+        android:id="@+id/one"/>
+
+    <com.thanoscorp.athene.models.StrokedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/calendar_bg"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:text="0"
+        android:textSize="40sp"
+        android:id="@+id/two"/>
+
+    <com.thanoscorp.athene.models.StrokedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/calendar_cell_text"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:text="1"
+        android:textSize="40sp"
+        android:id="@+id/three"/>
+
+    <com.thanoscorp.athene.models.StrokedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="9"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:textColor="@color/calendar_cell_text"
+        android:textSize="40sp"
+        android:id="@+id/four"/>
+
+
+</com.thanoscorp.athene.calendar.models.YearView>

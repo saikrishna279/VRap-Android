@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.thanoscorp.athene.models.StrokedTextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="@string/auth_activity_welcome"
+        android:textSize="50sp" />
+
+    <com.thanoscorp.athene.models.CCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.thanoscorp.athene.models.EditTextX
+                android:id="@+id/idET"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00000000"
+                android:hint="Identification Number"
+                android:inputType="textCapSentences|textVisiblePassword" />
+
+            <com.thanoscorp.athene.models.EditTextX
+                android:id="@+id/passET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00000000"
+                android:hint="Choose your VRap login password"
+                android:visibility="gone" />
+
+            <com.thanoscorp.athene.models.EditTextX
+                android:id="@+id/phoneET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00000000"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/auth_button_sign_up"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/auth_button_sign_in"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/confirmationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/mobileNumberConfirmTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/auth_is_mobile_number_correct" />
+
+                <com.thanoscorp.athene.models.BndrsntchTimer
+                    android:id="@+id/timerBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:progress_color="@color/colorAccent" />
+
+                <com.thanoscorp.athene.models.StrokedTextView
+                    android:id="@+id/confirmNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="No"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.thanoscorp.athene.models.CCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
