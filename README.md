@@ -20,34 +20,16 @@ This project is open sourced so that any future gen students can continue this p
 Many of the above mentioned features are not implemented.
 
 # Sign Up Logic
-```mermaid
-graph TD
-A[Registration Number] -->C[Submit details to Student CMS and Reset Password]
-A --> H[Store in Firebase]
-B --> I[Store in Firebase]
-B[Mobile Number]-->C[Submit details to Student CMS and Reset Password]
-C --> D[Get the changed CMS Password]
-D --> G[Store in Firebase]
-D-->E[Ask user for a new password, which will be used to authenticate the Firebase Account. This Password is used from now on]
-E-->F[Create Firebase Account with Regd.No. and Password Provided]
-```
+![](assets/signup.png)
 # Login Logic
-```mermaid
-graph TD
-A[Registration Number]
-B[VRap Password]
-C[Firebase Login]
-A-->C
-B-->C
-C-->D[Get details]
-```
+![](assets/login.png)
 # Implementations done till date
 ### User Authentication:
 The User Sign Up and Log In Works as shown:
 ![](assets/login_gif.gif)
 ### Calendar Flow:
 Calendar works as below:
-![](assets/calendar-full_gif.gif) ![](assets/calendar_folding_gif.gif)
+![](assets/calendar-full_gif.gif)
 # OG:
 ### ECE:
  - Sai Krishna
