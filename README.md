@@ -1,4 +1,4 @@
-﻿# VRap
+# VRap
 
 VRap is a college management app made for Velagapudi Ramakrishna Siddartha Engineering College, Vijayawada.
 
@@ -44,14 +44,13 @@ C-->D[Get details]
 # Implementations done till date
 ### User Authentication:
 The User Sign Up and Log In Works as shown:
-
+![](assets/login_gif.gif)
 ### Calendar Flow:
 Calendar works as below:
-
+![](assets/calendar-full_gif.gif) ![](assets/calendar_folding_gif.gif)
 # OG:
 ### ECE:
  - Sai Krishna
  - Gnana Sai
  - Lubna
  - Madhurima
-
